@@ -1,0 +1,5 @@
+@import './base.css';
+body{
+    background-image:url('image/background.png');
+    background-size: 'cover';
+}
