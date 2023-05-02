@@ -9,8 +9,6 @@
 </template>
 
 <script >
-
-
 export default ({
     data() {
         return {
@@ -40,20 +38,13 @@ export default ({
                         this.imgElem.push(this.selectedGameElement)
                         this.$emit('paired-success', this.selectedGameElement);
                     }
-
                 } else if (this.gameElements[this.selectedGameElement].category == this.cardCategory) {
                     this.imgElem.push(this.selectedGameElement)
                     this.$emit('paired-success', this.selectedGameElement);
                 };
-
-
             }
-
         },
-
     },
-
-
 })
 </script>
 

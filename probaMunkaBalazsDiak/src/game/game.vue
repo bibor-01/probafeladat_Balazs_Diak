@@ -73,7 +73,6 @@ export default ({
     updateSelected(payload) {
       this.releaseSelect = false;
       this.clickToyElement = payload;
-
     },
     pairedSuccess(pairedGameElement) {
       this.gameElements[pairedGameElement].paired = true;
@@ -82,12 +81,13 @@ export default ({
       for (let index = 0; index < this.gameElements.length; index++) {
         if (this.gameElements[index].paired == false) {
           pairedAll = false;
-
         }
-
       }
       if (pairedAll) {
-        console.log("nyert")
+        setTimeout(() => {
+          alert("nyert")
+        }, 500);
+      
       }
     }
   },

@@ -29,8 +29,6 @@ export default ({
             this.gameElements.forEach(element => {
                 console.log(element);
             });
-
-
         },
         gameElementsBoard(index) {
             if (this.gameElements[index].paired == false) {
@@ -38,7 +36,6 @@ export default ({
                 this.$emit('update-selected', index);
             }
         }
-
     },
     watch: {
         releaseSelect: function (newreleaseSelect, oldreleaseSelect) {
